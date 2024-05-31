@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 30px 40px;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #363636;
+}
+
+.citySelectorForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.citySelectorForm label {
+  margin-bottom: 10px;
+}
+.citySelectorForm select {
+  padding: 5px;
+  font-size: 16px;
+  background-color: rgb(0, 245, 245, 0.5);
+  border-radius: 4px;
+  border: 1px solid #c7c7c7;
+  color: #606060;
+  font-weight: 700;
+  box-shadow: 0 2px 5px #00000029;
+  transition: all 0.2s ease-in-out;
+}
+.citySelectorForm select:hover {
+  background-color: rgba(0, 225, 225, 0.8);
+  border: 1px solid #c7c7c7;
+}
+.citySelectorForm select:focus {
+  outline: none;
+  border-color: transparent;
+  border: 1px solid #c7c7c7;
+}
+.citySelectorForm option {
+  background-color: #e1e1e1;
+}
+
+
+@media (max-width: 600px) {
+  .citySelectorForm select {
+    font-size: 12px;
+  }
+  .citySelectorForm label {
+    font-size: 12px;
+  }
+  body {
+    padding: 30px 0;
+  }
+}

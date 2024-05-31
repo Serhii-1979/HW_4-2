@@ -1,0 +1,77 @@
+.sliderContainer {
+  margin: 0 auto;
+  position: relative;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trigger {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+
+  height: 94%;
+  z-index: 2;
+}
+.trigger button {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+  color: rgb(221, 221, 221);
+  transition: all 0.3s ease-in-out;
+}
+.trigger button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #ebebeb;
+  font-weight: 500;
+  font-size: 18px;
+}
+.cards {
+  display: flex;
+  transition: left 0.5s ease-in-out;
+  width: 100%;
+}
+
+.card {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.rounds {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.rounds button {
+  border: none;
+  background: #ccc;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.rounds button.active {
+  background: #333;
+}
+
+
+@media (max-width: 600px) {
+  .sliderContainer {
+    width: 70%;
+  }
+}

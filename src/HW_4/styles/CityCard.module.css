@@ -1,0 +1,68 @@
+.App {
+  border: 1px solid #6b6b6b;
+}
+
+.cityCard {
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  padding: 16px 40px;
+  margin: 20px auto;
+  width: 95%;
+  box-shadow: 0 2px 5px #0000004b;
+}
+
+.cityImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cityCard h2 {
+  margin: 20px;
+}
+
+.cityCard h3 {
+  margin: 20px;
+}
+
+.cityCard ul {
+  padding-left: 20px;
+}
+.container_p {
+  text-align: left;
+}
+.container_ul {
+  text-align: left;
+}
+.cityCard_line {
+  border-top: 1px solid #b8b8b8;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(78, 78, 78);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+  a {
+    font-size: 12px;
+  }
+}
